@@ -1,31 +1,64 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: #f0f0f0; /* Light gray background */
+  font-family: Arial, sans-serif; /* Set a nice font */
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh; /* Full height */
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  background-color: #fff; /* White background for the calculator */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  padding: 20px;
+  width: 300px; /* Fixed width */
 }
 
-.heart {
-  color: #ff0000;
+.result {
+  font-size: 2rem; /* Larger text for the result */
+  margin-bottom: 20px; /* Space below the result */
+  text-align: right; /* Align text to the right */
+  padding: 10px;
+  border: 1px solid #ccc; /* Light border around the result */
+  border-radius: 5px; /* Slightly rounded corners */
+  background-color: #fafafa; /* Light background for the result */
 }
 
-.small {
-  font-size: 0.75rem;
+.button-grid {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 10px; /* Space between buttons */
+}
+
+input[type='button'] {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 20px; /* Padding for buttons */
+  font-size: 1.5rem; /* Larger font size for buttons */
+  border-radius: 5px; /* Rounded corners for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Transition effect */
+}
+
+input[type='button']:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.clear-button {
+  background-color: #dc3545; /* Bootstrap danger color */
+}
+
+.clear-button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+.submit-button {
+  background-color: #28a745; /* Bootstrap success color */
+}
+
+.submit-button:hover {
+  background-color: #218838; /* Darker green on hover */
 }
